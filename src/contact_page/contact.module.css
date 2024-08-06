@@ -1,0 +1,47 @@
+.contactsCard {
+    background-color: black; /* Dark background color */
+    color: white; /* White text color */
+    padding: 2rem 18rem; /* Padding around the entire container */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contactsTitle {
+    text-decoration: none;
+    color:grey;
+    margin-bottom: 0.5rem; /* Reduced margin-bottom for titles */
+    font-weight: bold;
+    font-size: 1.2rem; /* Slightly larger font for titles */
+}
+
+.contactsTitle:hover {
+    color: white;/* Optional: change text color on hover */
+}
+
+.contactsDescription {
+    text-decoration: none;
+    width: 10rem;
+    color:grey;
+    margin-left: 0.5rem; /* Reduced space between icon and text */
+    font-size: 0.9rem; /* Consistent smaller font size for descriptions */
+}
+
+.contactsDescription:hover {
+    color: white; /* Optional: change text color on hover */
+}
+
+.image {
+    height: 1.5rem; /* Smaller icon size */
+    width: 1.5rem;
+}

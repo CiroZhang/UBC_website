@@ -1,11 +1,14 @@
 
-import About from "./about_page/about"
+import About from "./about_page/about.js"
+import Contacts from "./contact_page/contact.js"
+
 
 
 function App() {
   return (
     <>
       <About/>
+      <Contacts/>
     </>
 
   );
