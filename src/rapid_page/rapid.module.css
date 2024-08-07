@@ -1,0 +1,112 @@
+.rapidBackground {
+    background-color: black;
+    height: 120rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+}
+
+.title {
+    color: gray;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.aboutTitle {
+    color: gray;
+    font-size: 2.5rem;
+}
+
+.title{
+    width: 85rem;
+    align-items: left;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 2rem;
+    margin-left: -10rem; /* Slightly shift the image to the left */
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center; /* Keep centered alignment */
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    flex: 1;
+    margin: 0 1rem;   
+    white-space: pre-line; /* Allow text to break into multiple lines */
+    max-width: 20rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 5rem; /* Increase gap between image and text */
+    margin-bottom: 8rem;
+}
+
+
+.additionalContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.newImageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align the image to the left */
+    align-items: center;
+}
+
+.newImage {
+    max-width: 60%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.newTextContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.newText {
+    color: grey;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    white-space: pre-line; /* Allow text to break into multiple lines */
+    max-width: 40rem;
+}
+
+.newText strong {
+    color: white; /* Make the bold text white */
+}
