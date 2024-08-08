@@ -19,26 +19,13 @@ function Contacts() {
           <a className={styles.contactsDescription}>USCAP</a>
         </div>
 
-          <div className={styles.contactSection}>
-            <a className={styles.contactsTitle}>PAGES</a>
-          <a className={styles.contactsDescription}>About</a>
-          <a className={styles.contactsDescription}>Rapid</a>
-          <a className={styles.contactsDescription}>Expert</a>
-          <a className={styles.contactsDescription}>Diagnosis</a>
-          <a className={styles.contactsDescription}>Contact</a>
-        </div>
-
         <div className={styles.contactSection}>
           <a className={styles.contactsTitle}>CONTACT</a>
 
-          <div className={styles.contacts}>
+          <div className={styles.contactSection}>
             
-            <h4 className={styles.contactsDescription}>(604)7282258</h4>
-          </div>
-
-          <div className={styles.contacts}>
-         
-            <h4 className={styles.contactsDescription}>example@gmail.com</h4>
+            <a className={styles.contactsDescription}>(604)7282258</a>
+            <a className={styles.contactsDescription}>example@gmail.com</a>
           </div>
 
 
