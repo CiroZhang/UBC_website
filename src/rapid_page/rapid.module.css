@@ -18,7 +18,7 @@
     font-size: 2.5rem;
 }
 
-.title{
+.title {
     width: 85rem;
     align-items: left;
 }
@@ -30,16 +30,11 @@
 }
 
 .image {
-    max-width: 60%;
+    width: 40vw; 
+    max-width: 600px; 
     height: auto;
     border-radius: 2rem;
-    margin-left: -10rem; /* Slightly shift the image to the left */
-}
-
-.imageContainer {
-    display: flex;
-    justify-content: center; /* Keep centered alignment */
-    width: 100%;
+    margin-left: -10rem;
 }
 
 .row {
@@ -54,7 +49,7 @@
     text-align: center;
     flex: 1;
     margin: 0 1rem;   
-    white-space: pre-line; /* Allow text to break into multiple lines */
+    white-space: pre-line; 
     max-width: 20rem;
 }
 
@@ -64,10 +59,9 @@
     align-items: center;
     width: 100%;
     gap: 1rem;
-    margin-top: 5rem; /* Increase gap between image and text */
+    margin-top: 5rem; 
     margin-bottom: 8rem;
 }
-
 
 .additionalContent {
     display: flex;
@@ -81,12 +75,13 @@
 .newImageContainer {
     flex: 1;
     display: flex;
-    justify-content: flex-start; /* Align the image to the left */
+    justify-content: flex-start; 
     align-items: center;
 }
 
 .newImage {
-    max-width: 60%;
+    width: 40vw; 
+    max-width: 600px; 
     height: auto;
     border-radius: 2rem;
 }
@@ -103,10 +98,10 @@
     color: grey;
     font-size: 2.5rem;
     line-height: 1.5;
-    white-space: pre-line; /* Allow text to break into multiple lines */
+    white-space: pre-line; 
     max-width: 40rem;
 }
 
 .newText strong {
-    color: white; /* Make the bold text white */
+    color: white; 
 }
