@@ -1,6 +1,6 @@
 .rapidBackground {
     background-color: black;
-    height: 120rem;
+    height: 120vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,17 +9,17 @@
 
 .title {
     color: gray;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
 }
 
 .aboutTitle {
     color: gray;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
 }
 
 .title{
-    width: 85rem;
+    width: 85vw;
     align-items: left;
 }
 
@@ -32,13 +32,13 @@
 .image {
     max-width: 60%;
     height: auto;
-    border-radius: 2rem;
-    margin-left: -10rem; /* Slightly shift the image to the left */
+    border-radius: 2vw;
+    margin-left: -10vw;
 }
 
 .imageContainer {
     display: flex;
-    justify-content: center; /* Keep centered alignment */
+    justify-content: center; 
     width: 100%;
 }
 
@@ -50,12 +50,12 @@
 
 .text {
     color: white;
-    font-size: 2rem;
+    font-size: 2vw;
     text-align: center;
     flex: 1;
-    margin: 0 1rem;   
+    margin: 0 1vw;   
     white-space: pre-line; /* Allow text to break into multiple lines */
-    max-width: 20rem;
+    max-width: 20vw;
 }
 
 .textContainer {
@@ -63,9 +63,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 1rem;
-    margin-top: 5rem; /* Increase gap between image and text */
-    margin-bottom: 8rem;
+    gap: 1vw;
+    margin-top: 5vw; /* Increase gap between image and text */
+    margin-bottom: 8vw;
 }
 
 
@@ -73,9 +73,9 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 2vw;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 2vw;
 }
 
 .newImageContainer {
@@ -88,7 +88,7 @@
 .newImage {
     max-width: 60%;
     height: auto;
-    border-radius: 2rem;
+    border-radius: 2vw;
 }
 
 .newTextContainer {
@@ -96,17 +96,17 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 1vw;
 }
 
 .newText {
     color: grey;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     line-height: 1.5;
-    white-space: pre-line; /* Allow text to break into multiple lines */
-    max-width: 40rem;
+    white-space: pre-line;
+    max-width: 40vw;
 }
 
 .newText strong {
-    color: white; /* Make the bold text white */
+    color: white;
 }
