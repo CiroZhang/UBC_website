@@ -1,5 +1,5 @@
 .rapidBackground {
-    background-color: black;
+    background-color: white;
     height: 120rem;
     width: 100rem;
     display: flex;
@@ -46,7 +46,7 @@
 }
 
 .text {
-    color: white;
+    color: black;
     font-size: 2rem;
     text-align: center;
     flex: 1;
@@ -105,5 +105,5 @@
 }
 
 .newText strong {
-    color: white; 
+    color: black; 
 }

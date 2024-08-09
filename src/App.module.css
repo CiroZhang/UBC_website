@@ -43,7 +43,7 @@
 }
 
 .section_rapid {
-  background-color: black;
+  background-color: white;
 }
 
 .section_experts {
@@ -57,7 +57,7 @@
 .titlePage {
   background-size: cover;
   background-position: center;
-  background-color: rgb(35, 35, 35); 
+  background-color: rgb(110, 101, 101); 
   color: white;
   display: flex;
   flex-direction: column;
