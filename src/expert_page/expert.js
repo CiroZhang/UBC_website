@@ -5,67 +5,96 @@ const expertsData = [
   {
     name: 'John Doe',
     image: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
-    specialities: ['Machine Learning', 'Data Science', 'AI Ethics']
+    specialities: ['Machine Learning', 'Data Science', 'AI Ethics'],
+    email: 'johndoe@example.com'
   },
   {
     name: 'Jane Smith',
     image: 'https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg',
-    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography']
+    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography'],
+    email: 'janesmith@example.com'
   },
   {
     name: 'Alice Johnson',
     image: 'https://pixlr.com/images/index/ai-image-generator-one.webp',
-    specialities: ['Software Development', 'Cloud Computing', 'DevOps']
+    specialities: ['Software Development', 'Cloud Computing', 'DevOps'],
+    email: 'alicejohnson@example.com'
   },
   {
     name: 'John Doe',
     image: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
-    specialities: ['Machine Learning', 'Data Science', 'AI Ethics']
+    specialities: ['Machine Learning', 'Data Science', 'AI Ethics'],
+    email: 'johndoe@example.com'
   },
   {
     name: 'Jane Smith',
     image: 'https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg',
-    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography']
+    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography'],
+    email: 'janesmith@example.com'
   },
   {
     name: 'Alice Johnson',
     image: 'https://pixlr.com/images/index/ai-image-generator-one.webp',
-    specialities: ['Software Development', 'Cloud Computing', 'DevOps']
+    specialities: ['Software Development', 'Cloud Computing', 'DevOps'],
+    email: 'alicejohnson@example.com'
   },
   {
     name: 'John Doe',
     image: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
-    specialities: ['Machine Learning', 'Data Science', 'AI Ethics']
+    specialities: ['Machine Learning', 'Data Science', 'AI Ethics'],
+    email: 'johndoe@example.com'
   },
   {
     name: 'Jane Smith',
     image: 'https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg',
-    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography']
+    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography'],
+    email: 'janesmith@example.com'
   },
   {
     name: 'Alice Johnson',
     image: 'https://pixlr.com/images/index/ai-image-generator-one.webp',
-    specialities: ['Software Development', 'Cloud Computing', 'DevOps']
+    specialities: ['Software Development', 'Cloud Computing', 'DevOps'],
+    email: 'alicejohnson@example.com'
   },
   {
     name: 'John Doe',
     image: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
-    specialities: ['Machine Learning', 'Data Science', 'AI Ethics']
+    specialities: ['Machine Learning', 'Data Science', 'AI Ethics'],
+    email: 'johndoe@example.com'
   },
   {
     name: 'Jane Smith',
     image: 'https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg',
-    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography']
+    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography'],
+    email: 'janesmith@example.com'
   },
   {
     name: 'Alice Johnson',
     image: 'https://pixlr.com/images/index/ai-image-generator-one.webp',
-    specialities: ['Software Development', 'Cloud Computing', 'DevOps']
+    specialities: ['Software Development', 'Cloud Computing', 'DevOps'],
+    email: 'alicejohnson@example.com'
   },
-  
+  {
+    name: 'John Doe',
+    image: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
+    specialities: ['Machine Learning', 'Data Science', 'AI Ethics'],
+    email: 'johndoe@example.com'
+  },
+  {
+    name: 'Jane Smith',
+    image: 'https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg',
+    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography'],
+    email: 'janesmith@example.com'
+  },
+  {
+    name: 'Alice Johnson',
+    image: 'https://pixlr.com/images/index/ai-image-generator-one.webp',
+    specialities: ['Software Development', 'Cloud Computing', 'DevOps'],
+    email: 'alicejohnson@example.com'
+  },
 ];
 
-const ExpertCard = ({ name, image, specialities }) => (
+const ExpertCard = ({ name, image, specialities, email }) => (
   <div className={styles.card}>
     <img src={image} alt={`${name}`} className={styles.image} />
     <h3 className={styles.expertName}>{name}</h3>
@@ -74,6 +103,7 @@ const ExpertCard = ({ name, image, specialities }) => (
         <li key={index} className={styles.specialityItem}>{speciality}</li>
       ))}
     </ul>
+    <p className={styles.email}><a href={`mailto:${email}`}>{email}</a></p>
   </div>
 );
 
@@ -118,6 +148,7 @@ const ExpertsPage = () => {
             name={expert.name}
             image={expert.image}
             specialities={expert.specialities}
+            email={expert.email}  // Pass the email to the ExpertCard
           />
         ))}
       </div>

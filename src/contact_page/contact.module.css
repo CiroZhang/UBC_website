@@ -4,6 +4,8 @@
     padding: 2rem 18rem; /* Padding around the entire container */
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    width: 100rem;
+    margin: 0 auto;
 }
 
 .contactSection {

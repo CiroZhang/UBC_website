@@ -20,10 +20,15 @@ function App() {
         </ul>
       </nav>
 
+      <div id="title" className={styles.titlePage}>
+        <h1>Rapid Expert Pathology Diagnostics</h1>
+      </div>
+
+
       <div id="about" className={styles.section}>
         <About />
       </div>
-      <div id="rapid" className={styles.section}>
+      <div id="rapid" className={styles.section_rapid}>
         <Rapid />
       </div>
       <div id="experts" className={styles.section_experts}>
@@ -32,7 +37,7 @@ function App() {
       <div id="routine" className={styles.section}>
         <RoutineServices />
       </div>
-      <div id="contacts" className={styles.section}>
+      <div id="contacts" className={styles.section_contacts}>
         <Contacts />
       </div>
     </>

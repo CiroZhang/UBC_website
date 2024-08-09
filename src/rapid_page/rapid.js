@@ -7,7 +7,7 @@ function Rapid() {
     return (
         <div className={styles.rapidBackground}>
             <div className = {styles.title}>
-                <h2 className = {styles.aboutTitle}> Rpaid</h2>
+                <h2 className = {styles.aboutTitle}> Rapid</h2>
             </div>
             <div className={styles.imageContainer}>
                 <img src={image1} className={styles.image}/>

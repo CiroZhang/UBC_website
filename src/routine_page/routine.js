@@ -7,8 +7,10 @@ const routineData = [
   },
   {
     title: "Pathology consultation, and second opinion services",
-    description:
-      "Routine or digital pathology slides for primary diagnosis and second opinion. Provide service for digital scanning of routine pathology slides for digital diagnosis."
+    subItems: [
+      "Routine or digital pathology slides for primary diagnosis and second opinion.",
+      "Provide service for digital scanning of routine pathology slides for digital diagnosis."
+    ]
   },
   {
     title: "Biomarker testing",
@@ -27,6 +29,7 @@ const routineData = [
     description: "Our team of experts can provide quality control/assurance for local pathology labs according to local or national standards."
   }
 ];
+
 
 const RoutineServices = () => {
   return (
@@ -54,5 +57,6 @@ const RoutineServices = () => {
     </div>
   );
 };
+
 
 export default RoutineServices;

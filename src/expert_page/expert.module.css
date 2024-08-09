@@ -2,7 +2,7 @@
   padding: 40px;
   text-align: center;
   background-color: #f9f9f9;
-  width: 85rem;
+  width: 100rem;
   margin: 0 auto;
 }
 
@@ -89,4 +89,20 @@
   margin-right: 10px;
   font-size: 1.2em;
   vertical-align: middle;
+}
+
+.email {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #007bff;
+}
+
+.email a {
+  color: inherit;  /* Use the inherited color from .email */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.email a:hover {
+  color: #0056b3; /* Darken the color on hover */
 }
