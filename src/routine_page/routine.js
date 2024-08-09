@@ -8,8 +8,7 @@ const routineData = [
   {
     title: "Pathology consultation, and second opinion services",
     description:
-      "Routine or digital pathology slides for primary diagnosis and second opinion\nProvide service for digital scanning of routine pathology slides for digital diagnosis"
-    
+      "Routine or digital pathology slides for primary diagnosis and second opinion. Provide service for digital scanning of routine pathology slides for digital diagnosis."
   },
   {
     title: "Biomarker testing",
@@ -39,7 +38,7 @@ const RoutineServices = () => {
         {routineData.map((item, index) => (
           <li key={index} className={styles.listItem}>
             {item.title}
-            {item.description && <p>{item.description}</p>}
+            {item.description && <p className={styles.description}>{item.description}</p>}
             {item.subItems && (
               <ul className={styles.subList}>
                 {item.subItems.map((subItem, subIndex) => (

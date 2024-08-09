@@ -48,19 +48,30 @@ const expertsData = [
     specialities: ['Software Development', 'Cloud Computing', 'DevOps']
   },
   {
+    name: 'John Doe',
+    image: 'https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg',
+    specialities: ['Machine Learning', 'Data Science', 'AI Ethics']
+  },
+  {
+    name: 'Jane Smith',
+    image: 'https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg',
+    specialities: ['Cybersecurity', 'Network Engineering', 'Cryptography']
+  },
+  {
     name: 'Alice Johnson',
     image: 'https://pixlr.com/images/index/ai-image-generator-one.webp',
     specialities: ['Software Development', 'Cloud Computing', 'DevOps']
-  }
+  },
+  
 ];
 
 const ExpertCard = ({ name, image, specialities }) => (
   <div className={styles.card}>
     <img src={image} alt={`${name}`} className={styles.image} />
-    <h3>{name}</h3>
-    <ul>
+    <h3 className={styles.expertName}>{name}</h3>
+    <ul className={styles.specialitiesList}>
       {specialities.map((speciality, index) => (
-        <li key={index}>{speciality}</li>
+        <li key={index} className={styles.specialityItem}>{speciality}</li>
       ))}
     </ul>
   </div>
@@ -83,10 +94,15 @@ const ExpertsPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Meet Our Experts</h1>
+      <h1 className={styles.title}>Meet Our Experts</h1>
       <div className={styles.filter}>
-        <label htmlFor="speciality">Filter by Speciality: </label>
-        <select id="speciality" value={selectedSpeciality} onChange={handleSpecialityChange}>
+        <label htmlFor="speciality" className={styles.filterLabel}>Filter by Speciality: </label>
+        <select
+          id="speciality"
+          value={selectedSpeciality}
+          onChange={handleSpecialityChange}
+          className={styles.filterSelect}
+        >
           <option value="">All</option>
           {uniqueSpecialities.map((speciality, index) => (
             <option key={index} value={speciality}>
